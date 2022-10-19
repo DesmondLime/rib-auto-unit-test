@@ -1,0 +1,24 @@
+{
+  "name": "rib-auto-unit-test",
+  "version": "0.0.1",
+  "description": "Auto generates unit tests for Uber RIB style iOS project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node dist/index.js",
+    "lint": "npx eslint . --ext .ts --fix",
+    "build": "tsc && ncc build dist/tsc/index.js -o dist/ncc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mustache": "^4.2.1",
+    "@types/node": "^17.0.31",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "@vercel/ncc": "^0.33.4",
+    "eslint": "^8.15.0",
+    "mustache": "^4.2.0",
+    "super-expressive": "^1.4.1",
+    "typescript": "^4.6.4"
+  }
+}
